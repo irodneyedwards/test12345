@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyNotes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="flex justify-center items-center w-screen h-screen">
+        <div class="H-64 w-1/2 bg-gray-60px-4 rounded-md">
+            <div class="w-full">
+                <div class="w-full my-2"><h2 class="text-2xl text-black">Todo</h2></div>
+                <label class="relative flex">
+                    <span class="sr-only">Add new item</span>
+                    <input class="block bg-white w-full border border-slate-300 rounded-md py-2 px-2 mr-2" placeholder="Add new item" type="text" name="inputField" id="inputField"/>
+                    <button class="px-4 py-2 border border-slate-300 hover:bg-black 
+                    hover:text-white text-black rounded-md" type="button" onclick="newElement()" id="addToDoBtn">Add</button>
+                </label>
+            </div>
+            <div class="border-indigo-500 border-b-2 my-4 rounded"></div>
+            <div>
+                <ul id="myList"></ul>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
